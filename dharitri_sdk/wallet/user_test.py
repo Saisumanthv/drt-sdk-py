@@ -134,7 +134,7 @@ def test_sign_transaction():
     transaction_computer = TransactionComputer()
 
     tx.signature = signer.sign(transaction_computer.compute_bytes_for_signing(tx))
-    assert tx.signature.hex() == "b56769014f2bdc5cf9fc4a05356807d71fcf8775c819b0f1b0964625b679c918ffa64862313bfef86f99b38cb84fcdb16fa33ad6eb565276616723405cd8f109"
+    assert tx.signature.hex() == "6d308fe0924019c84d0c5894507435d4eedea1d3f992df5506daed1f2a2ec27e0c8176067c7a71b1680b3fe661c3b726db58fab4c9be52e169d7d4e78fd42a02"
     assert verifier.verify(transaction_computer.compute_bytes_for_signing(tx), tx.signature)
 
 
@@ -146,7 +146,7 @@ def test_sign_message():
     verifier = UserVerifier.from_address(Address.new_from_bech32("drt1qyu5wthldzr8wx5c9ucg8kjagg0jfs53s8nr3zpz3hypefsdd8ssey5egf"))
 
     message.signature = signer.sign(message_computer.compute_bytes_for_signing(message))
-    assert message.signature.hex() == "561bc58f1dc6b10de208b2d2c22c9a474ea5e8cabb59c3d3ce06bbda21cc46454aa71a85d5a60442bd7784effa2e062fcb8fb421c521f898abf7f5ec165e5d0f"
+    assert message.signature.hex() == "e9ddb76b9df89a4e9d500fc02138c9a2cf8a9e75a3dd52a345eadd87da18682b302a8a915c7776a5919a2d2274a88922ae932e4f600ebf4e164ebd3b16d11d03"
     assert verifier.verify(message_computer.compute_bytes_for_signing(message), message.signature)
 
 

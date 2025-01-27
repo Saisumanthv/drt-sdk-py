@@ -37,7 +37,7 @@ class TestRelayedV2Builder:
         inner_tx = Transaction(
             chain_id=network_config.chain_id,
             sender=self.alice.label,
-            receiver="drt1yvesqqqqqqqqqqqqqqqqqqqqqqqqyvesqqqqqqqqqqqqqqqzlllsd5j0s2",
+            receiver="drt1qqqqqqqqqqqqqqqpqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqzllls6prdez",
             gas_limit=10,
             nonce=15,
             data=b"getContractConfig"
@@ -59,7 +59,7 @@ class TestRelayedV2Builder:
         inner_tx = Transaction(
             chain_id=network_config.chain_id,
             sender=self.bob.label,
-            receiver="drt1yvesqqqqqqqqqqqqqqqqqqqqqqqqyvesqqqqqqqqqqqqqqqzlllsd5j0s2",
+            receiver="drt1qqqqqqqqqqqqqqqpqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqzllls6prdez",
             gas_limit=0,
             nonce=15,
             data=b"getContractConfig"
@@ -81,4 +81,4 @@ class TestRelayedV2Builder:
         assert relayed_tx.version == 2
         assert relayed_tx.options == 0
         assert relayed_tx.nonce == 37
-        assert relayed_tx.data.decode() == "relayedTxV2@000000000000000000010000000000000000000000000000000000000002ffff@0f@676574436f6e7472616374436f6e666967@fc3ed87a51ee659f937c1a1ed11c1ae677e99629fae9cc289461f033e6514d1a8cfad1144ae9c1b70f28554d196bd6ba1604240c1c1dc19c959e96c1c3b62d0c"
+        assert relayed_tx.data.decode() == "relayedTxV2@000000000000000000010000000000000000000000000000000000000002ffff@0f@676574436f6e7472616374436f6e666967@1703b6e2a855fd93a0758c15f80427ebceb695c0ef12ae613fae90fa9fcc105cf79391cad98f034efded0a72a6b312ce4e798804c81abee632e07bc7747fb40c"

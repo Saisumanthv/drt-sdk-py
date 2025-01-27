@@ -42,7 +42,7 @@ class TestAccountTransactionsFactory:
         assert tx.sender == "drt1qyu5wthldzr8wx5c9ucg8kjagg0jfs53s8nr3zpz3hypefsdd8ssey5egf"
         assert tx.receiver == "drt1qyu5wthldzr8wx5c9ucg8kjagg0jfs53s8nr3zpz3hypefsdd8ssey5egf"
         assert tx.data.decode() == "SetGuardian@8049d639e5a6980d1cd2392abcce41029cda74a1563523a202f09641cc2618f8@446861726974726954435353657276696365"
-        assert tx.gas_limit == 475500
+        assert tx.gas_limit == 469500
 
     def test_guard_account(self):
         sender = Address.new_from_bech32("drt1qyu5wthldzr8wx5c9ucg8kjagg0jfs53s8nr3zpz3hypefsdd8ssey5egf")

@@ -16,7 +16,7 @@ def test_message_v1_serialize_for_signing():
         data="test message".encode()
     )
     serialized = message_computer.compute_bytes_for_signing(message)
-    assert serialized.hex() == "2162d6271208429e6d3e664139e98ba7c5f1870906fb113e8903b1d3f531004d"
+    assert serialized.hex() == "0f6fce3fa6130fc58a25eaff6e157ea1bcb02fbf9773dca514dfaf3cd1e0bdfe"
 
 
 def test_sign_packed_message_and_verify_unpacked_message():
@@ -27,13 +27,13 @@ def test_sign_packed_message_and_verify_unpacked_message():
 
     signer = UserSigner.from_pem_file(parent / "testutils" / "testwallets" / "alice.pem")
     message.signature = signer.sign(message_computer.compute_bytes_for_signing(message))
-    assert message.signature.hex() == "7aff43cd6e3d880a65033bf0a1b16274854fd7dfa9fe5faa7fa9a665ee851afd4c449310f5f1697d348e42d1819eaef69080e33e7652d7393521ed50d7427a0e"
+    assert message.signature.hex() == "70e7cbd157568ce5250ced7c3e6caf97669c47142cc337b135bbd7a438ae962fa84a426fd1b64fcdcdecc3a2935b7db9b8d35035eaae153126608c2c03602109"
 
     packed_message = message_computer.pack_message(message)
     assert packed_message == {
         "address": "drt1qyu5wthldzr8wx5c9ucg8kjagg0jfs53s8nr3zpz3hypefsdd8ssey5egf",
         "message": "74657374",
-        "signature": "7aff43cd6e3d880a65033bf0a1b16274854fd7dfa9fe5faa7fa9a665ee851afd4c449310f5f1697d348e42d1819eaef69080e33e7652d7393521ed50d7427a0e",
+        "signature": "70e7cbd157568ce5250ced7c3e6caf97669c47142cc337b135bbd7a438ae962fa84a426fd1b64fcdcdecc3a2935b7db9b8d35035eaae153126608c2c03602109",
         "version": 1,
         "signer": SDK_PY_SIGNER
     }

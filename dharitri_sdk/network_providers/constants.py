@@ -1,7 +1,7 @@
 from dharitri_sdk.core.address import Address
 
 #  left for compatibility reasons; will be deleted in the future
-DCDT_CONTRACT_ADDRESS = Address.new_from_bech32("drt1yvesqqqqqqqqqqqqqqqqqqqqqqqqyvesqqqqqqqqqqqqqqqzlllsd5j0s2")
+DCDT_CONTRACT_ADDRESS = Address.new_from_bech32("drt1qqqqqqqqqqqqqqqpqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqzllls6prdez")
 
 METACHAIN_ID = 4294967295
 MAX_UINT64 = 18446744073709551615

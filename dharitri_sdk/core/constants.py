@@ -18,7 +18,7 @@ DELEGATION_MANAGER_SC_ADDRESS = "drt1yvesqqqqqqqqqqqqqqqqqqqqqqqqyvesqqqqqqqqqqq
 DEFAULT_HRP = "drt"
 
 # left it for compatibility reasons, will be deleted in the future
-CONTRACT_DEPLOY_ADDRESS = "drt1yvesqqqqqqqqqqqqqqqqqqqqqqqqyvesqqqqqqqqqqqqqqqqqqqq9r2gz0"
+CONTRACT_DEPLOY_ADDRESS = "drt1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq85hk5z"
 
 DELEGATION_MANAGER_SC_ADDRESS_HEX = "000000000000000000010000000000000000000000000000000000000004ffff"
 CONTRACT_DEPLOY_ADDRESS_HEX = "0000000000000000000000000000000000000000000000000000000000000000"

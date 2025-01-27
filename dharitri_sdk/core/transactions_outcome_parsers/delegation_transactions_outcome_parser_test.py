@@ -12,7 +12,7 @@ class TestDelegationTransactionsOutcomeParser:
     parser = DelegationTransactionsOutcomeParser()
 
     def test_parse_create_new_delegation_contract(self):
-        contract_address = Address.new_from_bech32("drt1yvesqqqqqqqqqqqqqqqqqqqqqqqqyvesqqqqqqqqqqqqqy8llllssrzx6z")
+        contract_address = Address.new_from_bech32("drt1qqqqqqqqqqqqqqqpqqqqqqqqqqqqqqqqqqqqqqqqqqqqqy8lllls8knyn2")
 
         encodedTopics = [
             "Q8M8GTdWSAAA",
@@ -34,7 +34,7 @@ class TestDelegationTransactionsOutcomeParser:
         ]
 
         sc_deploy_event = TransactionEvent(
-            address="drt1yvesqqqqqqqqqqqqqqqqqqqqqqqqyvesqqqqqqqqqqqqqy8llllssrzx6z",
+            address="drt1qqqqqqqqqqqqqqqpqqqqqqqqqqqqqqqqqqqqqqqqqqqqqy8lllls8knyn2",
             identifier="SCDeploy",
             topics=base64_topics_to_bytes(encodedTopics)
         )

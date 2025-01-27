@@ -31,7 +31,7 @@ def test_contract_deployment_builder():
     assert payload.data == b"aabbccdd@0500@0506@2a@74657374"
     assert tx.chain_id == "D"
     assert tx.sender == owner.to_bech32()
-    assert tx.receiver == "drt1yvesqqqqqqqqqqqqqqqqqqqqqqqqyvesqqqqqqqqqqqqqqqqqqqq9r2gz0"
+    assert tx.receiver == "drt1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq85hk5z"
     assert tx.gas_limit == 10000000
     assert tx.gas_price == 1000000000
     assert tx.data.decode() == str(payload)
