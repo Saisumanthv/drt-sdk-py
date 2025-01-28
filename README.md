@@ -1,4 +1,4 @@
-# drt-sdk-py
+# drt-py-sdk
 
 The Python SDK for interacting with Dharitri. It's an all in one sdk that can be used to create transactions (including smart contract calls and deployments), sign and broadcast transactions, create wallets and many more.
 
