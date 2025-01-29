@@ -5,7 +5,7 @@ The Python SDK for interacting with Dharitri. It's an all in one sdk that can be
 ## Documentation
 
 - [Cookbook](./examples/Cookbook.ipynb)
-- [Auto-generated documentation](https://TerraDharitri.github.io/drt-sdk-py/)
+- [Auto-generated documentation](https://TerraDharitri.github.io/drt-py-sdk/)
 
 ## Development setup
 

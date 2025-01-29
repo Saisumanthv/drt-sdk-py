@@ -13,7 +13,7 @@ from dharitri_sdk.wallet.errors import (ErrInvalidKeystoreFilePassword,
 
 def decrypt(encrypted_data: EncryptedData, password: str) -> bytes:
     """
-    Also see: https://github.com/TerraDharitri/drt-sdk-js-wallet/blob/main/src/crypto/decryptor.ts
+    Also see: https://github.com/TerraDharitri/drt-js-sdk-wallet/blob/main/src/crypto/decryptor.ts
     """
     backend = default_backend()
 

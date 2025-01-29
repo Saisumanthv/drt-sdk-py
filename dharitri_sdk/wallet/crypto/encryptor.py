@@ -13,7 +13,7 @@ from dharitri_sdk.wallet.interfaces import IRandomness
 
 def encrypt(data: bytes, password: str, randomness: IRandomness) -> EncryptedData:
     """
-    Also see: https://github.com/TerraDharitri/drt-sdk-js-wallet/blob/main/src/crypto/encryptor.ts
+    Also see: https://github.com/TerraDharitri/drt-js-sdk-wallet/blob/main/src/crypto/encryptor.ts
     """
     backend = default_backend()
 

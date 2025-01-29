@@ -16,8 +16,8 @@ class TransactionEventsParser:
 
         # By default, we consider that the first topic is the event identifier.
         # This is true for log entries emitted by smart contracts:
-        # https://github.com/TerraDharitri/drt-chain-vm-go/blob/v1.5.27/vmhost/contexts/output.go#L270
-        # https://github.com/TerraDharitri/drt-chain-vm-go/blob/v1.5.27/vmhost/contexts/output.go#L283
+        # https://github.com/TerraDharitri/drt-go-chain-vm/blob/v1.5.27/vmhost/contexts/output.go#L270
+        # https://github.com/TerraDharitri/drt-go-chain-vm/blob/v1.5.27/vmhost/contexts/output.go#L283
         self.first_topic_as_identifier = first_topic_as_identifier
 
     def parse_events(self, events: List[TransactionEvent]) -> List[SimpleNamespace]:

@@ -30,7 +30,7 @@ dependencies = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/TerraDharitri/drt-sdk-py"
+"Homepage" = "https://github.com/TerraDharitri/drt-py-sdk"
 
 [tool.hatch.build]
 exclude = [
